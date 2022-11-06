@@ -1,0 +1,4 @@
+{
+  "language": "Python3",
+  "code": "print(sum([int(x) for x in input().split(\" \")]))"
+}
