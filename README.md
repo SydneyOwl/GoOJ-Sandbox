@@ -7,10 +7,10 @@
 
 ### 沙箱
 
-docker:
+docker(沙箱部分，非服务端):
 
 ```shell
-docker build -t xxx/xxx -f xxx .
+docker build -t Judge/judger_exec -f Dockerfile . #(or docker pull sydneymrcat/sandbox)
 docker run --name exec -d --privileged -e ES_ENABLE_GRPC=1 -e ES_ENABLE_METRICS=1 -e ES_ENABLE_DEBUG=1 -e ES_GRPC_ADDR=:6051 -e ES_HTTP_ADDR=:6050 -p 6051:6051 -p 6050:6050 judger_exec
 ```
 

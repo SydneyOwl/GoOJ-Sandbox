@@ -47,7 +47,7 @@ func (runConfig RunConfig) IsValid() bool {
 
 // GetCompilerByLanguage returns proper compiler
 func GetCompilerByLanguage(language string) CompileConfig {
-	for _, v := range supported_complier {
+	for _, v := range supported_compiler {
 		if v.Language == language {
 			return v
 		}
@@ -276,7 +276,7 @@ var (
 	*/
 
 	DEFAULT            = JudgeMode{"default"}
-	supported_complier = []CompileConfig{CC, CCWithO2, CCPP, CCPPWithO2, CJAVA, CPYTHON2, CPYTHON3, CGOLANG, CCS, CPyPy2, CPyPy3} //, CSPJ_C, CSPJ_CPP, CINTERACTIVE_C, CINTERACTIVE_CPP}
+	supported_compiler = []CompileConfig{CC, CCWithO2, CCPP, CCPPWithO2, CJAVA, CPYTHON2, CPYTHON3, CGOLANG, CCS, CPyPy2, CPyPy3} //, CSPJ_C, CSPJ_CPP, CINTERACTIVE_C, CINTERACTIVE_CPP}
 	supported_mode     = []JudgeMode{DEFAULT}
 	supported_runcfg   = []RunConfig{RC, RCPP, RJAVA, RPYTHON2, RPYTHON3, RGOLANG, RCS, RPHP, RJS_NODE}
 	supported_ojstatus = []OJStatus{STATUS_NOT_SUBMITTED, STATUS_CANCELLED, STATUS_PRESENTATION_ERROR, STATUS_COMPILE_ERROR, STATUS_WRONG_ANSWER,
