@@ -1,9 +1,10 @@
 # README
  [![card](https://goreportcard.com/badge/github.com/sydneyowl/GoOJ-Sandbox)](https://goreportcard.com/report/github.com/sydneyowl/GoOJ-Sandbox) [![GO-REFERENCE](https://pkg.go.dev/badge/github.com/sydneyowl/GoOJ-Sandbox.svg)](https://pkg.go.dev/github.com/SydneyOwl/GoOJ-Sandbox)
 
-## 部署
 
-这是连接沙盒程序的服务端部分。
+这是连接沙箱程序的服务端部分，调用restful接口交互沙箱程序,目前暂不支持rpc类型的调用。模仿HOJ实现了DefaultMode的编译、运行功能。目前支持`C++/C/Python2/Python3/Java/Go/C#/PHP/JS(node)`;沙箱程序来自[go-judge](https://github.com/criyle/go-judge),部署方式可见下文
+
+## 部署
 
 ### 沙箱
 
